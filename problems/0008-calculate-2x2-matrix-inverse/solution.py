@@ -11,11 +11,7 @@ def inverse_2x2(matrix: list[list[float]]) -> list[list[float]] | None:
         The inverse matrix as a 2x2 list, or None if the matrix is singular
         (i.e., determinant equals zero)
     """
-    matrix = np.array(matrix)
-    a = matrix[0,0]
-    b = matrix[0,1]
-    c = matrix[1,0]
-    d = matrix[1,1]
+    (a,b),(c,d) = matrix
     det = a*d - b*c
     if det == 0:
         return None
