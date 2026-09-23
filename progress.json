@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:58:22.241Z",
+  "generated_at": "2026-09-23T13:02:30.149Z",
   "items": {
     "problem:1": {
       "kind": "problem",
@@ -192,9 +192,9 @@
       "url": "https://www.deep-ml.com/problems/880",
       "path": "problems/0880-create-a-float-tensor-from-a-python-list",
       "first_solved_at": "2026-09-23T12:58:21.172Z",
-      "last_pushed_at": "2026-09-23T12:58:21.172Z",
+      "last_pushed_at": "2026-09-23T13:02:29.214Z",
       "language": "python",
-      "lines": 7
+      "lines": 6
     }
   }
 }
