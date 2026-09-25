@@ -5,7 +5,7 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, initial_weights: np.n
 	weights = initial_weights
 	bias = initial_bias
 	mse_values = []
-	while epoch < epochs:
+	for _ in range(epochs):
 		# forward pass
 		outputs = forward_pass(features, weights, bias)
 		# compute loss
@@ -16,8 +16,6 @@ def train_neuron(features: np.ndarray, labels: np.ndarray, initial_weights: np.n
 		# update the weights
 		weights -= learning_rate*(np.matmul(features.T,gradient))
 		bias -= learning_rate*(np.sum(gradient))
-
-		epoch += 1
 
 	return np.round(weights,4), np.round(bias,4), mse_values
 
